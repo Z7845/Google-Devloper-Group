@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+        }
+        .language-selector {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        .language-option {
+            margin: 10px 0;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 0;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="language-selector">
+    <h1>Select Your Language</h1>
+    <div class="language-option">
+        <a href="http://localhost/GDG-REPO/Gujarati/index.php"><button onclick="selectLanguage('Gujarati')">ગુજરાતી</button></a>
+    </div>
+    <div class="language-option">
+        <a href="http://localhost/GDG-REPO/English/index.php"><button onclick="selectLanguage('English')">English</button></a>
+    </div>
+    <div class="language-option">
+        <a href="http://localhost/GDG-REPO/Hindi/index.php"><button onclick="selectLanguage('Hindi')">हिन्दी</button></a>
+    </div>
+    <div class="language-option">
+        <a href="http://localhost/GDG-REPO/Marathi/index.php"><button onclick="selectLanguage('Marathi')">मराठी</button></a>
+    </div>
+    <div class="language-option">
+        <a href="http://localhost/GDG-REPO/Tamil/index.php"><button onclick="selectLanguage('Tamil')">தமிழ்</button></a>
+    </div>
+    <div class="language-option">
+        <a href="http://localhost/GDG-REPO/Telugu/index.php"><button onclick="selectLanguage('Telugu')">తెలుగు</button></a>
+    </div>
+    <div class="language-option">
+        <a href="http://localhost/GDG-REPO/Malyalam/index.php"><button onclick="selectLanguage('Malayalam')">മലയാളം</button></a>
+    </div>
+    <div class="language-option">
+        <a href="http://localhost/GDG-REPO/Bengoli/index.php"><button onclick="selectLanguage('Bengoli')">বাংলা</button></a>
+    </div>
+</div>
+
+<script>
+    function selectLanguage(language) {
+        alert("You have selected: " + language);
+        // Here you can add code to redirect to the respective language page or load content in the selected language
+    }
+</script>
+
+</body>
+</html>
